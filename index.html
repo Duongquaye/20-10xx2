@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="em-xinh-mono.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <div class="input-section">
+            <label for="nameInput">Vui Lòng Nhập Tên Của Bạn:</label>
+            <input type="text" id="nameInput" placeholder="Nhập đầy đủ họ tên...">
+            <p class="error-message" id="errorMessage"></p>
+        </div>
+        <div class="card" id="wishCard" style="display: none;">
+            <div class="heart"></div>
+            <h1>Chúc Mừng Ngày 20/10</h1>
+            <div style="position: relative; display: flex; justify-content: center; align-items: center;">
+                <div id="imageGallery" style="display: none; width: 100%; position: absolute; pointer-events: none;">
+                    <div class="photo-frame left-photo" style="position: absolute; left: -250px; top: 50%; transform: translateY(-50%);">
+                        <div class="frame" style="padding: 15px; background: linear-gradient(45deg, #ffd7e5, #ffe9f1); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transform: rotate(-5deg);">
+                            <img class="special-image" src="g:\My Drive\1740575429308.jpg" style="width: 200px; height: 280px; object-fit: cover; border-radius: 10px; border: 5px solid white;" alt="Special Image 1">
+                            <div class="frame-decoration" style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 2px dashed #ffb6c1; border-radius: 20px; z-index: -1;"></div>
+                        </div>
+                    </div>
+                    <div class="photo-frame right-photo" style="position: absolute; right: -250px; top: 50%; transform: translateY(-50%);">
+                        <div class="frame" style="padding: 15px; background: linear-gradient(45deg, #ffd7e5, #ffe9f1); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transform: rotate(5deg);">
+                            <img class="special-image" src="g:\My Drive\1740575429221.jpg" style="width: 200px; height: 280px; object-fit: cover; border-radius: 10px; border: 5px solid white;" alt="Special Image 2">
+                            <div class="frame-decoration" style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 2px dashed #ffb6c1; border-radius: 20px; z-index: -1;"></div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="flowerCanvas" width="400" height="400" style="display: none;"></canvas>
+            </div>
+            <div class="message">
+                <p>Chúc mừng bạn nhỏ <span id="selectedName" class="highlight-name"></span>:</p>
+                <div class="wishes">
+                    <span>Luôn xinh đẹp rạng ngời ❀</span>
+                    <span>Hạnh phúc viên mãn ♥</span>
+                    <span>Thành công rực rỡ ⭐</span>
+                    <span>Tràn đầy niềm vui 🌸</span>
+                </div>
+            </div>
+
+            <div class="flowers">
+                <div class="flower">❀</div>
+                <div class="flower">❀</div>
+                <div class="flower">❀</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
